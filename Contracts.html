@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1.0, user-scalable=no">
+    <title> مؤشرات العقود </title>
+
+    <!-- Custom fonts for this template-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="css/Layout.css" rel="stylesheet">
+    <link href="css/owners.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+
+
+</head>
+
+<body id="page-top" class="sidebar-toggled">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+               <!-- Sidebar -->
+        <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
+            <div class="row mt-3 mb-2 mx-1 align-items-center justify-content-end">
+                <div class="col sidebarToggleDiv">
+                    <button class="rounded-circle border-0" id="sidebarToggle"></button>
+                </div>
+                <div class="col-auto">
+                    <input type="checkbox" id="myCheckbox" class="d-none">
+                    <label for="myCheckbox" class="lang-button" id="checkboxLabel">
+                        <i class="fa-solid fa-globe lang_globe"></i> English
+                    </label>
+                </div>
+            </div>
+            <div class="d-flex flex-column sidebar-blocks">
+                <div>
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn rounded-circle closeBtn">
+                        <i class="fa-solid fa-xmark fa-1x toggleButton"></i>
+                    </button>
+
+                    <!-- User Profile Section -->
+                    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#" id="userDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="row flex-column align-items-center">
+                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                <div class="Profile">
+                                    <img src="images/user.svg" alt="Profile photo" class="user-photo">
+                                </div>
+                            </div>
+                            <div class="sidebar-brand-text col-12">
+                                <h6 class="user_name wow fadeInDown" data-wow-delay=".5s">عيسي هاني مبروك عزام</h6>
+                                <p class="wow fadeInDown" data-wow-delay=".5s">مشرف علي الفروع</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Dropdown - User Information -->
+                    <div class="dropdown-menu dropdown-menu-right shadow user-dropdown" aria-labelledby="userDropdown">
+                        <p class="welcome-Message">مرحبًا عيسي هاني مبروك</p>
+                        <a class="dropdown-item" href="https://ayatt12.github.io/login_v2/Systems.html">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <img src="images/Systems.svg">
+                                </div>
+                                <div class="col">
+                                    <p>الأنظمة</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="dropdown-item" href="https://ayatt12.github.io/login_v2/index.html">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <img src="images/Logout.svg">
+                                </div>
+                                <div class="col">
+                                    <p>تسجيل الخروج</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Navigation Items -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <span>لوحة التحكم</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#collapseUtilities"
+                            aria-expanded="true" aria-controls="collapseUtilities">
+                            <span style="color: #39629c;">مؤشرات العقود</span>
+                        </a>
+                        <div class="collapse show">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <a class="collapse-item" href="tenant.html">المستـأجرين <img
+                                        src="images/TenantsSideBar.svg"></a>
+                                <a class="collapse-item active" href="Contracts.html">العقود <img src="images/ContractsSideBar.svg"></a>
+                                <a class="collapse-item" href="Cars.html">السيارات <img src="images/CarsSideBar.svg"></a>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+                <!-- Company Logo Section -->
+                <div>
+                    <div class="row flex-column align-items-center justify-content-center">
+                        <div class="col-12 d-flex align-items-center justify-content-center">
+                            <div class="Profile company-logo" style="width: auto;">
+                                <img src="images/DefualtCompany Logo.png"  class="mb-2" style="height: 60px;">
+                            </div>
+                        </div>
+                        <div class="sidebar-brand-text col-12 text-center">
+                            <h6 class="company_name">شركة كدي لتأجير السيارات</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div class="layer"></div>
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-transparent topbar static-top  align-items-baseline">
+
+                    <div class="col bars-button">
+                        <!-- Sidebar Toggle (Topbar) -->
+                        <button id="sidebarToggleTop" class="btn btn-link  rounded-circle mr-3">
+                            <i class="fa fa-bars toggleButton"></i>
+                        </button>
+                    </div>
+
+
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                            <div class="row mb-2 g-2">
+                                <div class=" col-sm-6 col-lg-3">
+                                    <div class="card border-left-primary h-100 py-2">
+                                        <div class="card-body">
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col data-card">
+                                                    <div class="rate-card_icon"><img src="images/contract.svg"alt="contracts_icon"></div>
+                                                    <span class="Data_value_address">العقود</span>
+                                                    <span class=" data-card-number">1,197</span>
+
+                                                </div>
+                                            </div>
+                                            <hr class="card-hr">
+                                            <div class="row">
+                                                <div class="col data-card2">
+                                                    <span>المغلقة</span> <span>1,091</span>
+                                                </div>
+                                                <div class="col data-card2">
+                                                    <span>المعلقة</span> <span>2</span>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <div class="col data-card2">
+                                                    <span>القائمة</span> <span>104</span>
+                                                </div>
+                                                <div class="col data-card2">
+                                                    <span>المحفوظة</span> <span>0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class=" col-sm-6  col-lg-3 ">
+                                    <div class="card border-left-success h-100 py-2 ">
+                                        <div class="card-body ">
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col data-card">
+                                                    <div class="rate-card_icon"><img src="images/car.svg" alt="car_icon"></div>
+                                                    <span class="Data_value_address" >السيارات</span>
+                                                    <span class="data-card-number"> 2500</span>
+
+                                                </div>
+                                            </div>
+                                            <hr class="card-hr">
+                                            <div class="row">
+                                                <div class="col data-card2">
+                                                    <span>مؤجرة</span> <span>104</span>
+                                                </div>
+                                                <div class="col data-card2" style="white-space: nowrap;">
+                                                    <span>غير متاحة</span> <span>96</span>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <div class="col data-card2">
+                                                    <span>متاحة</span> <span>3000</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class=" col-sm-6 col-lg-3  ">
+                                    <div class="card border-left-success h-100 py-2">
+                                        <div class="card-body">
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col data-card">
+                                                    <div class="rate-card_icon"><img src="images/tenant.svg" alt="tenant_icon"></div>
+                                                    <span class="Data_value_address">المستأجرين</span>
+                                                    <span class="data-card-number "> 1,020</span>
+
+                                                </div>
+                                            </div>
+
+                                            <hr class="card-hr">
+                                            <div class="row">
+                                                <div class="col data-card2">
+                                                    <span>بعقود</span> <span>894</span>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <div class="col data-card2">
+                                                    <span>بدون عقود</span> <span>126</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class=" col-sm-6 col-lg-3  ">
+                                    <div class="card border-left-success h-100 py-2">
+                                        <div class="card-body">
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col data-card ">
+                                                    <div class="rate-card_icon"><img src="images/revenue.svg" alt="balance-icon"></div>
+                                                    <span class="Data_value_address">الإيرادات</span>
+                                                    <span class="data-card-number">22,406,837.89</span>
+
+                                                </div>
+                                            </div>
+                                            <hr class="card-hr">
+                                            <div class="row">
+                                                <div class="col data-card2 flex-wrap">
+                                                    <span> العقود</span> <span>11,103,333.89</span>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <div class="col data-card2 flex-wrap">
+                                                    <span> التعويضات</span> <span>11,303,504.00</span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row text-end  ">
+                                <div class="col-lg-4">
+                                    <div class="card  mb-2 mb-xl-4">
+                                        <div class="card-header py-1">
+                                            <h5> الفروع الأكثر نشاطًا </h5>
+                                            <hr class="card-hr">
+
+                                        </div>
+                                        <div class="card-body">
+                                            <div class=" mb-2">
+                                                <h4 class="small font-weight-bold progress-rate"> 48.86%</h4>
+                                                <div class="row">
+                                                    <div class="col-auto">
+                                                        <span>المرجان</span>
+                                                    </div>
+                                                    <div class="col d-flex align-items-center">
+                                                        <div class="progress">
+                                                            <div class="progress-bar progress1" role="progressbar"
+                                                                style="width: 48.86%" aria-valuenow="48.86"
+                                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class=" mb-2">
+                                                <h4 class="small font-weight-bold progress-rate"> 33.8%</h4>
+                                                <div class="row">
+                                                    <div class="col-auto">
+                                                        <span>الهضبة</span>
+                                                    </div>
+                                                    <div class="col d-flex align-items-center">
+                                                        <div class="progress">
+                                                            <div class="progress-bar progress2" role="progressbar"
+                                                                style="width: 33.8%" aria-valuenow="33.8"
+                                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class=" mb-2">
+                                                <h4 class="small font-weight-bold progress-rate"> 20%</h4>
+                                                <div class="row">
+                                                    <div class="col-auto">
+                                                        <span>الصريف</span>
+                                                    </div>
+                                                    <div class="col d-flex align-items-center">
+                                                        <div class="progress">
+                                                            <div class="progress-bar progress3" role="progressbar"
+                                                                style="width: 20%" aria-valuenow="20" aria-valuemin="0"
+                                                                aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card  mb-2 mb-xl-4">
+                                        <div class="card-header py-1">
+                                            <h5> قيم العقود الأكثر نشاطًا</h5>
+                                            <hr class="card-hr">
+
+                                        </div>
+                                        <div class="card-body">
+                                            <div class=" mb-2">
+                                                <h4 class="small font-weight-bold progress-rate"> 48.86%</h4>
+                                                <div class="row">
+                                                    <div class="col-auto">
+                                                        <span> أكثر من 5000</span>
+                                                    </div>
+                                                    <div class="col d-flex align-items-center">
+                                                        <div class="progress">
+                                                            <div class="progress-bar progress1" role="progressbar"
+                                                                style="width: 48.86%" aria-valuenow="48.86"
+                                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class=" mb-2">
+                                                <h4 class="small font-weight-bold progress-rate"> 33.8%</h4>
+                                                <div class="row">
+                                                    <div class="col-auto">
+                                                        <span>600 - 1000</span>
+                                                    </div>
+                                                    <div class="col d-flex align-items-center">
+                                                        <div class="progress">
+                                                            <div class="progress-bar progress2" role="progressbar"
+                                                                style="width: 33.8%" aria-valuenow="33.8"
+                                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class=" mb-2">
+                                                <h4 class="small font-weight-bold progress-rate"> 20%</h4>
+                                                <div class="row">
+                                                    <div class="col-auto">
+                                                        <span> 1000 - 1500 </span>
+                                                    </div>
+                                                    <div class="col d-flex align-items-center">
+                                                        <div class="progress">
+                                                            <div class="progress-bar progress3" role="progressbar"
+                                                                style="width: 20%" aria-valuenow="20" aria-valuemin="0"
+                                                                aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card  mb-2 mb-xl-4">
+                                        <div class="card-header py-1">
+                                            <h5> المسافات اليومية الأكثر نشاطًا </h5>
+                                            <hr class="card-hr">
+
+                                        </div>
+                                        <div class="card-body">
+                                            <div class=" mb-2">
+                                                <h4 class="small font-weight-bold progress-rate"> 48.86%</h4>
+                                                <div class="row">
+                                                    <div class="col-auto">
+                                                        <span>200 - 300 </span>
+                                                    </div>
+                                                    <div class="col d-flex align-items-center">
+                                                        <div class="progress">
+                                                            <div class="progress-bar progress1" role="progressbar"
+                                                                style="width: 48.86%" aria-valuenow="48.86"
+                                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class=" mb-2">
+                                                <h4 class="small font-weight-bold progress-rate"> 33.8%</h4>
+                                                <div class="row">
+                                                    <div class="col-auto">
+                                                        <span> أقل من 100
+                                                        </span>
+                                                    </div>
+                                                    <div class="col d-flex align-items-center">
+                                                        <div class="progress">
+                                                            <div class="progress-bar progress2" role="progressbar"
+                                                                style="width: 33.8%" aria-valuenow="33.8"
+                                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class=" mb-2">
+                                                <h4 class="small font-weight-bold progress-rate"> 20%</h4>
+                                                <div class="row">
+                                                    <div class="col-auto">
+                                                        <span>اخرى
+                                                        </span>
+                                                    </div>
+                                                    <div class="col d-flex align-items-center">
+                                                        <div class="progress">
+                                                            <div class="progress-bar progress3" role="progressbar"
+                                                                style="width: 20%" aria-valuenow="20" aria-valuemin="0"
+                                                                aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row  text-end ">
+                                <div class="col-xl-4">
+                                    <div class="card mb-2">
+                                        <div class="card-header py-1">
+                                            <h5> أيام التأجير الأكثر نشاطًا</h5>
+                                            <hr class="card-hr">
+
+                                        </div>
+
+                                        <div class="card-body pt-0">
+                                            <div class="row">
+                                                <div class="col-sm-4 ">
+                                                    <p class="text-center m-0 chart-title">الثلاثاء</p>
+                                                    <div id="First_value_Charts"></div>
+                                                    <p  class="text-center m-0">35.5%</p>
+
+
+                                                </div>
+                                                <div class="col-sm-4 popularCharts_div">
+                                                    <p class="text-center m-0 chart-title"> الأحد </p>
+                                                    <div id="Second_value_Charts"></div>
+                                                    <p  class="text-center m-0">20.5%</p>
+
+                                                </div>
+                                                <div class="col-sm-4 ">
+                                                    <p class="text-center m-0 chart-title"> الأربعاء </p>
+                                                    <div id="Third_value_Charts"></div>
+                                                    <p  class="text-center m-0">15.5%</p>
+
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="card mb-2">
+                                        <div class="card-header py-1">
+                                            <h5> أوقات التأجير الأكثر نشاطًا</h5>
+                                            <hr class="card-hr">
+
+                                        </div>
+
+                                        <div class="card-body pt-0">
+                                            <div class="row">
+                                                <div class="col-sm-4 ">
+                                                    <p class="text-center m-0 chart-title"> 21:00 - 23:59</p>
+                                                    <div id="First_period_Charts"></div>
+                                                    <p  class="text-center m-0">35.5%</p>
+
+                                                </div>
+                                                <div class="col-sm-4 popularCharts_div">
+                                                    <p class="text-center m-0 chart-title"> 18:00 - 20:59</p>
+                                                    <div id="Second_period_Charts"></div>
+                                                    <p  class="text-center m-0">20.5%</p>
+
+                                                </div>
+                                                <div class="col-sm-4 ">
+                                                    <p class="text-center m-0 chart-title"> 09:00 - 11:59</p>
+                                                    <div id="Third_period_Charts"></div>
+                                                    <p  class="text-center m-0">15.5%</p>
+
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="card  mb-2">
+                                        <div class="card-header py-1">
+                                            <h5> مدة العقود الأكثر نشاطًا</h5>
+                                            <hr class="card-hr">
+
+                                        </div>
+
+                                        <div class="card-body pt-0">
+                                            <div class="row">
+                                                <div class="col-sm-4 ">
+                                                    <p class="text-center m-0 chart-title">30 أكثر من</p>
+                                                    <div id="First_Distance_Charts"></div>
+                                                    <p  class="text-center m-0">35.5%</p>
+
+
+                                                </div>
+                                                <div class="col-sm-4 popularCharts_div">
+                                                    <p class="text-center m-0 chart-title">4 - 7</p>
+                                                    <div id="Second_Distance_Charts"></div>
+                                                    <p  class="text-center m-0">20.5%</p>
+
+                                                </div>
+                                                <div class="col-sm-4 ">
+                                                    <p class="text-center m-0 chart-title"> 11 - 15</p>
+                                                    <div id="Third_Distance_Charts"></div>
+                                                    <p  class="text-center m-0">15.5%</p>
+
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- wow.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- charts liberary  -->
+    <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-pie.min.js"></script>
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+        integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- bootsrab animation -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+    <script src="js/owners.js"></script>
+    <script src="js/demo/Contracts.js"></script>
+
+</body>
+
+</html>
