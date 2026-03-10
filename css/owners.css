@@ -296,7 +296,7 @@ body {
 }
 
 .scrollTable {
-    height: 51vh;
+    height: 51dvh;
     overflow: auto;
     min-height: 300px;
 }
@@ -618,7 +618,7 @@ body {
 
 .sidebar-blocks {
     justify-content: space-around;
-    height: calc(100vh - 60px);
+    height: calc(100dvh - 60px);
 }
 
 .sidebarToggleDiv {
@@ -629,7 +629,7 @@ body {
     position: sticky;
     top: 0rem;
     display: block !important;
-    height: 100vh;
+    /* height: 100dvh; */
     padding-left: .25rem;
     margin-left: -.25rem;
     overflow-y: auto;
@@ -670,10 +670,10 @@ body {
 @media (max-width:1440px) {
     .sidebar-blocks {
         justify-content: flex-start;
-        height: calc(100vh - 100px);
+        height: calc(100dvh - 100px);
     }    
     .scrollTable{
-         height: 40vh;
+         height: 40dvh;
     }
 }
  .card-header h5{

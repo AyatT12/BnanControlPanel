@@ -45,6 +45,8 @@ progress {
 .card {
     position: relative;
     display: flex;
+    flex: 1;
+    min-height: 0;
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
@@ -363,15 +365,20 @@ html {
 }
 
 body {
-    height: 100%
+    display: flex;
+    height: 100dvh;
+    flex-direction: column;
+    overflow: hidden;
 }
-
 a:focus {
     outline: 0
 }
 
 #wrapper {
-    display: flex
+    display: flex;
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
 }
 
 #wrapper #content-wrapper {
@@ -544,14 +551,14 @@ a:focus {
 
 .sidebar {
     width: 9rem;
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     flex-direction: column;
     overflow: hidden;
 }
 
 .sidebar-blocks {
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -849,11 +856,11 @@ a:focus {
 @media (min-width:768px) {
     .sidebar {
         width: 23rem !important;
-        height: 100vh;
+        height: 100dvh;
     }
 
     .sidebar-blocks {
-        height: 100vh;
+        height: 100dvh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -925,7 +932,7 @@ a:focus {
     .sidebar.toggled {
         overflow: visible;
         width: 12rem !important;
-        height: 100vh;
+        height: 100dvh;
     }
 
     .sidebar.toggled .nav-item .collapse .collapse-inner {
@@ -1199,7 +1206,7 @@ text-align: start;
     }
 
     .sidebar {
-        height: 100vh;
+        height: 100dvh;
         width: 17rem !important;
         position: fixed !important;
         z-index: 999;
@@ -1211,7 +1218,7 @@ text-align: start;
     }
     
     .sidebar-blocks {
-        height: 100vh;
+        height: 100dvh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
