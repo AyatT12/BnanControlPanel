@@ -32,10 +32,14 @@
                 <div class="col sidebarToggleDiv">
                     <button class="rounded-circle border-0" id="sidebarToggle"></button>
                 </div>
-                <div class="col-auto">
+                <div class="col-auto d-flex align-items-center justify-content-end gap-1 p-1">
+                    <button class="p-1 video-btn " data-bs-toggle="modal" data-bs-target="#videoModal">
+                        <img src="images/Video_icon.svg" />
+                    </button>
                     <input type="checkbox" id="myCheckbox" class="d-none">
                     <label for="myCheckbox" class="lang-button" id="checkboxLabel">
-                        <i class="fa-solid fa-globe lang_globe"></i> English
+                        English
+                        <i class="fa-solid fa-globe lang_globe"></i>
                     </label>
                 </div>
             </div>
@@ -94,7 +98,7 @@
                         </a>
                     </li>
 
-                    <li class="nav-item">
+                    <li class="nav-item pt-2">
                         <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#collapseUtilities"
                             aria-expanded="true" aria-controls="collapseUtilities">
                             <span style="color: #39629c;">مؤشرات العقود</span>
@@ -115,7 +119,7 @@
                     <div class="row flex-column align-items-center justify-content-center">
                         <div class="col-12 d-flex align-items-center justify-content-center">
                             <div class="Profile company-logo" style="width: auto;">
-                                <img src="images/DefualtCompany Logo.png" class="mb-2" style="height: 60px;">
+                                <img src="images/DefualtCompany Logo.png" class="mb-2"  style="max-width: 170px;max-height: 80px;">
                             </div>
                         </div>
                         <div class="sidebar-brand-text col-12 text-center">
