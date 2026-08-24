@@ -15,12 +15,15 @@
 ::before {
     box-sizing: border-box
 }
+
 progress {
     vertical-align: baseline
 }
+
 .sidebar {
     transition: width 0.4s ease-in-out;
-}  
+}
+
 .sidebar .nav-item .nav-link[data-bs-toggle=collapse].collapsed::after {
     content: '\f104'
 }
@@ -53,7 +56,7 @@ progress {
     background-color: #fff;
     background-clip: border-box;
     border: 1px solid #ffffff;
-    border-radius:12px;
+    border-radius: 12px;
     box-shadow: 0px 4px 4px 0.5px rgba(255, 159, 64, 0.25);
 }
 
@@ -87,7 +90,7 @@ progress {
 .card-body {
     flex: 1 1 auto;
     min-height: 1px;
-    padding: .7rem .7rem .2rem; 
+    padding: .7rem .7rem .2rem;
 }
 
 .card-title {
@@ -370,6 +373,7 @@ body {
     flex-direction: column;
     overflow: hidden;
 }
+
 a:focus {
     outline: 0
 }
@@ -412,7 +416,7 @@ a:focus {
     color: #fff;
     background: rgba(90, 92, 105, .5);
     line-height: 46px;
-    z-index:999
+    z-index: 999
 }
 
 .scroll-to-top:focus,
@@ -566,42 +570,42 @@ a:focus {
 }
 
 
-.sidebar-blocks > div:last-child {
+.sidebar-blocks>div:last-child {
     flex-shrink: 0;
 }
 
 /* Responsive adjustments for small screens */
 @media (max-width: 1024px) {
-    .sidebar-blocks > div:first-child {
+    .sidebar-blocks>div:first-child {
         padding-top: 0.5rem;
     }
-    
-    .sidebar-blocks > div:last-child {
+
+    .sidebar-blocks>div:last-child {
         padding-bottom: 0.5rem;
     }
-    
+
     .sidebar .nav-item {
         margin-bottom: 0.25rem;
     }
-    
+
     .sidebar .nav-item .nav-link {
         padding: 0.5rem 0.75rem;
     }
-    
+
     .sidebar-brand {
         margin-bottom: 1rem !important;
     }
-    
+
     .sidebar-brand .user-photo {
         width: 80px;
         height: 80px;
     }
-    
+
     .sidebar-brand-text h6 {
         font-size: 0.9rem;
         margin-bottom: 0.25rem;
     }
-    
+
     .sidebar-brand-text p {
         font-size: 0.8rem;
         margin-bottom: 0;
@@ -610,47 +614,47 @@ a:focus {
 
 /* Additional responsive adjustments for better iPad and small screen support */
 @media (max-width: 1024px) and (min-width: 768px) {
-    .sidebar-blocks > div:first-child {
+    .sidebar-blocks>div:first-child {
         padding-top: 0.25rem;
     }
-    
-    .sidebar-blocks > div:last-child {
+
+    .sidebar-blocks>div:last-child {
         padding-bottom: 0.25rem;
     }
-    
+
     .sidebar .nav-item {
         margin-bottom: 0.2rem;
     }
-    
+
     .sidebar .nav-item .nav-link {
         padding: 0.4rem 0.6rem;
         font-size: 0.9rem;
     }
-    
+
     .sidebar-brand {
         margin-bottom: 0.75rem !important;
     }
-    
+
     .sidebar-brand .user-photo {
         width: 70px;
         height: 70px;
     }
-    
+
     .sidebar-brand-text h6 {
         font-size: 0.85rem;
         margin-bottom: 0.2rem;
     }
-    
+
     .sidebar-brand-text p {
         font-size: 0.75rem;
         margin-bottom: 0;
     }
-    
+
     .sidebar .nav-item .collapse .collapse-inner {
         padding: 0.3rem 0;
         margin: 0 0 0.5rem;
     }
-    
+
     .sidebar .nav-item .collapse .collapse-inner .collapse-item {
         padding: 0.3rem 0.4rem;
         margin: 0 0.3rem;
@@ -659,26 +663,26 @@ a:focus {
 }
 
 /* Ensure smooth scrolling on touch devices */
-.sidebar-blocks > div:first-child {
+.sidebar-blocks>div:first-child {
     -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
     scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
 }
 
-.sidebar-blocks > div:first-child::-webkit-scrollbar {
+.sidebar-blocks>div:first-child::-webkit-scrollbar {
     width: 4px;
 }
 
-.sidebar-blocks > div:first-child::-webkit-scrollbar-track {
+.sidebar-blocks>div:first-child::-webkit-scrollbar-track {
     background: transparent;
 }
 
-.sidebar-blocks > div:first-child::-webkit-scrollbar-thumb {
+.sidebar-blocks>div:first-child::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 2px;
 }
 
-.sidebar-blocks > div:first-child::-webkit-scrollbar-thumb:hover {
+.sidebar-blocks>div:first-child::-webkit-scrollbar-thumb:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -867,11 +871,11 @@ a:focus {
         flex: 1;
     }
 
-    .sidebar-blocks > div:first-child {
+    .sidebar-blocks>div:first-child {
         padding-top: 1rem;
     }
 
-    .sidebar-blocks > div:last-child {
+    .sidebar-blocks>div:last-child {
         flex-shrink: 0;
     }
 
@@ -921,7 +925,7 @@ a:focus {
         font-size: 2rem
     }
 
-     .sidebar-brand-text {
+    .sidebar-brand-text {
         display: inline
     }
 
@@ -936,7 +940,7 @@ a:focus {
     }
 
     .sidebar.toggled .nav-item .collapse .collapse-inner {
-       font-size: .75rem;
+        font-size: .75rem;
     }
 
     .sidebar.toggled .nav-item .collapsing {
@@ -1090,23 +1094,27 @@ a:focus {
     z-index: 999;
     background-color: white;
 }
-.sidebarToggleDiv{
-text-align: start;
+
+.sidebarToggleDiv {
+    text-align: start;
 }
+
 .sidebar .sidebar-brand {
     text-decoration: none;
     font-size: .875rem;
     font-weight: 400;
-    padding: 1rem 1rem;
+    padding: .4rem 1rem;
     text-align: center;
     letter-spacing: .05rem;
     z-index: 1
 }
-.closeBtn{
+
+.closeBtn {
     position: absolute;
     top: 15px;
     left: 5px;
 }
+
 /*///////////////////////////////////////////////  */
 
 
@@ -1163,6 +1171,7 @@ text-align: start;
     height: 15rem;
     width: 100%
 }
+
 .chart-pie2 {
     text-align: center;
     display: flex;
@@ -1176,6 +1185,10 @@ text-align: start;
 
     .chart-pie2 {
         height: calc(18.7rem - 120px) !important;
+    }
+
+    .chart-Messages {
+        height: calc(18.7rem - 170px) !important;
     }
 }
 
@@ -1201,7 +1214,7 @@ text-align: start;
 }
 
 @media (max-width:767px) {
-   .sidebar-brand-text {
+    .sidebar-brand-text {
         display: inline !important;
     }
 
@@ -1216,7 +1229,7 @@ text-align: start;
         flex-direction: column;
         overflow: hidden;
     }
-    
+
     .sidebar-blocks {
         height: 100dvh;
         display: flex;
@@ -1225,17 +1238,17 @@ text-align: start;
         flex: 1;
     }
 
-    .sidebar-blocks > div:first-child {
+    .sidebar-blocks>div:first-child {
 
         padding-top: 0.5rem;
-     
+
     }
 
-    .sidebar-blocks > div:last-child {
+    .sidebar-blocks>div:last-child {
         flex-shrink: 0;
         padding-bottom: 0.5rem;
     }
-    
+
     .sidebar.toggled {
         transform: translateX(100%) !important;
     }
@@ -1260,7 +1273,7 @@ text-align: start;
 }
 
 .Profile {
-   
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1272,10 +1285,34 @@ text-align: start;
     font-size: 1rem;
 }
 
-@media (min-width:767px){
+@media (min-width:767px) {
     .topbar {
         height: 0rem;
         padding: 2px;
     }
-    
+
+}
+
+/* Vido icon  */
+.video-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #39629c;
+    border: none;
+    transition: transform 0.4s ease, background-color 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-btn:hover {
+    background-color: #39629c;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(135, 174, 228, 0.4);
+}
+
+.video-btn img {
+    width: 20px;
+    height: 20px;
 }

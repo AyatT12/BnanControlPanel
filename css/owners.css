@@ -295,17 +295,6 @@ body {
     justify-content: flex-end;
 }
 
-.scrollTable {
-    height: 51dvh;
-    overflow: auto;
-    min-height: 300px;
-}
-
-.scroll-employee-Table {
-    height: 500px;
-    overflow: auto;
-    /* width: 1540px; */
-}
 
 .scrollTable::-webkit-scrollbar,
 .scroll-employee-Table::-webkit-scrollbar {
@@ -485,9 +474,6 @@ body {
 }
 
 /* //////////////////////////////////////////////////Branches/////////////////////////////////////////////////////// */
-.scrollTable_Branches td {
-    max-width: 200px;
-}
 
 .Branche {
     width: 200px;
@@ -497,9 +483,6 @@ body {
     font-weight: 600;
 }
 
-.scrollTable_Branches {
-    height: 500px;
-}
 
 .Branches-table-card {
     border-radius: 10px;
@@ -618,7 +601,7 @@ body {
 
 .sidebar-blocks {
     justify-content: space-around;
-    height: calc(100dvh - 60px);
+    height: calc(100dvh - 100px);
 }
 
 .sidebarToggleDiv {
@@ -672,9 +655,6 @@ body {
         justify-content: flex-start;
         height: calc(100dvh - 100px);
     }    
-    .scrollTable{
-         height: 40dvh;
-    }
 }
  .card-header h5{
     font-size: 18px;
